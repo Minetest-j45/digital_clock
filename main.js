@@ -11,7 +11,7 @@ function getHour() {
 
 function getMinute() {
 	var d = new Date();
-	//return d.getMinutes();
+	// return d.getMinutes();
 	var minute = ""+d.getMinutes();
 	if (minute.length == 1) {
 		minute = "0" + minute;
@@ -22,7 +22,7 @@ function getMinute() {
 
 function getSecond() {
 	var d = new Date();
-	//return d.getSeconds();
+	// return d.getSeconds();
 	var second = ""+d.getSeconds();
 	if (second.length == 1) {
 		second = "0" + second;
