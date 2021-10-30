@@ -19,3 +19,7 @@ body {
 	text-align: center;
 	border: 5px outset purple;
 }
+
+p {
+	font-size: 50%;
+}
