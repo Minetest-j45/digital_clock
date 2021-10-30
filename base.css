@@ -1,20 +1,21 @@
 body {
-    height: 100%;
-    background: linear-gradient(to bottom right, #cc0099 1%, #9999ff 100%);
+	height: 100%;
+	background: linear-gradient(to bottom right, #cc0099 1%, #9999ff 100%);
 	background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'Lucida Console', "Courier New", monospace;
+	background-attachment: fixed;
+	font-family: 'Lucida Console', "Courier New", monospace;
 }
+
 #clock {
-    background-color: #8cffff;
-    width: 75%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
-    font-size: 10vw;
-    text-align: center;
-    border: 5px outset purple;
+	background-color: #8cffff;
+	width: 75%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+	font-size: 10vw;
+	text-align: center;
+	border: 5px outset purple;
 }
