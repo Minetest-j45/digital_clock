@@ -1,44 +1,11 @@
-function getHour() {
-	var d = new Date();
-	// return d.getHours();
-	var hour = ""+d.getHours();
-	if (hour.length === 1) {
-		hour = "0" + hour;
-	}
-
-	return hour;
-}
-
-function getMinute() {
-	var d = new Date();
-	// return d.getMinutes();
-	var minute = ""+d.getMinutes();
-	if (minute.length === 1) {
-		minute = "0" + minute;
-	}
-
-	return minute;
-}
-
-function getSecond() {
-	var d = new Date();
-	// return d.getSeconds();
-	var second = ""+d.getSeconds();
-	if (second.length === 1) {
-		second = "0" + second;
-	}
-
-	return second;
-}
+var clock = document.getElementById('clock');
 
 function drawClock() {
-	var clock = document.getElementById('clock');
-	clock.innerHTML = getHour() + ":" + getMinute() + ":" + getSecond();
-	updateClock();
-}
-
-function updateClock() {
-	setTimeout(drawClock, 1000);
+	let now = new Date();
+	let str = now.toISOString();
+	let fmt = str.slice(11, 19);
+	clock.innerText = fmt;
 }
 
 drawClock();
+setInterval(drawClock, 100);
