@@ -34,7 +34,6 @@ function getSecond() {
 function drawClock() {
 	var clock = document.getElementById('clock');
 	clock.innerHTML = getHour() + ":" + getMinute() + ":" + getSecond();
-	updateClock();
 }
 
 function updateClock() {
@@ -42,3 +41,4 @@ function updateClock() {
 }
 
 drawClock();
+updateClock();
