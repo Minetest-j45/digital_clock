@@ -33,7 +33,7 @@ function getSecond() {
 
 function drawClock() {
 	var clock = document.getElementById('clock');
-	clock.innerHTML = getHour() + ":" + getMinute() + ":" + getSecond();
+	clock.innerText = getHour() + ":" + getMinute() + ":" + getSecond();
 }
 
 drawClock();
