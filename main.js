@@ -1,7 +1,7 @@
 function getHour() {
 	var d = new Date();
-	// return d.getHours();
-	var hour = ""+d.getHours();
+
+	var hour = "" + d.getHours();
 	if (hour.length === 1) {
 		hour = "0" + hour;
 	}
@@ -11,8 +11,8 @@ function getHour() {
 
 function getMinute() {
 	var d = new Date();
-	// return d.getMinutes();
-	var minute = ""+d.getMinutes();
+
+	var minute = "" + d.getMinutes();
 	if (minute.length === 1) {
 		minute = "0" + minute;
 	}
@@ -22,8 +22,8 @@ function getMinute() {
 
 function getSecond() {
 	var d = new Date();
-	// return d.getSeconds();
-	var second = ""+d.getSeconds();
+
+	var second = "" + d.getSeconds();
 	if (second.length === 1) {
 		second = "0" + second;
 	}
@@ -36,9 +36,5 @@ function drawClock() {
 	clock.innerHTML = getHour() + ":" + getMinute() + ":" + getSecond();
 }
 
-function updateClock() {
-	setTimeout(drawClock, 1000);
-}
-
 drawClock();
-updateClock();
+setInterval(drawClock, 100);
